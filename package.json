@@ -5,18 +5,12 @@
   "main": "index.js",
   "bin": "./bin/compactignore.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "prettier --check -u -w ."
   },
   "author": "confused-Techie",
   "license": "GPL-3.0",
-  "eslintConfig": {
-    "rules": {
-      "eqeqeq": "off",
-      "no-use-before-define": "off",
-      "quotes": ["error", "double"],
-      "arrow-parens": "off",
-      "no-console": "off"
-    },
-    "reportUnusedDisableDirectives": true
+  "devDependencies": {
+    "prettier": "^2.5.1"
   }
 }

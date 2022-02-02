@@ -7,41 +7,36 @@ async function run(rawArguments) {
   var options = parseArgv(rawArguments);
 
   if (options.status) {
-
     getConfig()
-      .then(config => {
+      .then((config) => {
         // the config should be the raw file from .compactignore
 
         parseConfig(JSON.parse(config))
-          .then(result => {
-
+          .then((result) => {
             // finally the result here will be an array of objects containing the name and contents of each file that needs to be saved
 
-            result.forEach(obj => {
+            result.forEach((obj) => {
               saveFile(obj.fileName, obj.fileContents)
-                .then(res => {
+                .then((res) => {
                   console.log(res);
                 })
-                .catch(err => {
+                .catch((err) => {
                   console.log(err);
                   process.exitCode = 1;
                 });
             });
-
           })
-          .catch(err => {
+          .catch((err) => {
             console.log(err);
             process.exitCode = 1;
           });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         process.exitCode = 1;
       });
-
-
   } else {
-    console.log('Something went wrong parsing CLI Options');
+    console.log("Something went wrong parsing CLI Options");
     process.exitCode = 1;
   }
 }

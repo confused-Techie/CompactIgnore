@@ -2,11 +2,11 @@
 
 To create a proper .compactignore file theres a few things to keep in mind.
 
-* The whole file is an object, containing different Profile Declarations, with an array of entries inside.
+- The whole file is an object, containing different Profile Declarations, with an array of entries inside.
 
 If we were to just use the Profile Declaration of `global` with a single entry that would look like so
 
-````(json)
+```(json)
 {
   "global": [
     {
@@ -16,7 +16,7 @@ If we were to just use the Profile Declaration of `global` with a single entry t
     }
   ]
 }
-````
+```
 
 Where `global` is the Profile Declaration, and the first object inside the array is a single entry.
 
@@ -28,4 +28,4 @@ Where `comment` should insert a comment following the syntax of the file to be c
 
 `action` will be what to do with the `location`. Valid values being to "exclude" or "include".
 
-While an entry may just contain a comment, to only make a comment in the resulting file, if a `location` is specified it HAS to have an action associated. 
+While an entry may just contain a comment, to only make a comment in the resulting file, if a `location` is specified it HAS to have an action associated.

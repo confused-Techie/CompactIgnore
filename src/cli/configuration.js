@@ -6,22 +6,18 @@ function getConfig() {
 
   // then first to see if our config file exists.
   return new Promise(function (resolve, reject) {
-
     findFile(".compactignore")
       .then((doesConfigFileExist) => {
         console.log(`Configuration File Found: ${doesConfigFileExist}`);
-          readFileContents(doesConfigFileExist)
-            .then(configFileContents => {
-              resolve(configFileContents);
-            });
-
+        readFileContents(doesConfigFileExist).then((configFileContents) => {
+          resolve(configFileContents);
+        });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         console.log("Configuration file coudln't be found");
         reject(err);
       });
-
   });
 }
 

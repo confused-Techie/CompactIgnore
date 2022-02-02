@@ -1,4 +1,4 @@
-const { isNotNull, sanatize } = require('./helpers.js');
+const { isNotNull, sanatize } = require("./helpers.js");
 
 function injest(data) {
   var tmpReturn = "";

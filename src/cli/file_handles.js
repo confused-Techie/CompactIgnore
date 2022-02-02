@@ -1,17 +1,17 @@
-const fs = require('fs');
+const fs = require("fs");
 
 function findFile(searchFile) {
   return new Promise(function (resolve, reject) {
     var fileFound = false;
-    fs.readdir('./', (err, files) => {
+    fs.readdir("./", (err, files) => {
       if (err) {
         reject(err);
       }
 
-      files.forEach(file => {
+      files.forEach((file) => {
         if (file == searchFile) {
           fileFound = true;
-          resolve('./'+file);
+          resolve("./" + file);
         }
       });
       if (!fileFound) {
@@ -23,7 +23,7 @@ function findFile(searchFile) {
 
 function readFileContents(fileToRead) {
   return new Promise(function (resolve, reject) {
-    fs.readFile(fileToRead, 'utf8', function(err, data) {
+    fs.readFile(fileToRead, "utf8", function (err, data) {
       if (err) {
         console.log(err);
         reject(err);
@@ -37,9 +37,9 @@ function readFileContents(fileToRead) {
 function saveFile(fileName, fileContents) {
   return new Promise(function (resolve, reject) {
     try {
-      fs.writeFileSync(`./${fileName}`, fileContents)
+      fs.writeFileSync(`./${fileName}`, fileContents);
       resolve(`Successfully Wrote ${fileName}`);
-    } catch(err) {
+    } catch (err) {
       reject(err);
     }
   });

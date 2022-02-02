@@ -1,50 +1,18 @@
 {
   "global": [
     {
-      "location": "node_modules",
-      "comment": "duh",
+      "location": "node_modules/",
+      "comment": "Ensure Node Modules are excluded everywhere needed.",
       "action": "exclude"
     }
   ],
   "gitignore": [
-    {
-      "location": "list.json",
-      "comment": "Include my fancy json file",
-      "action": "include"
-    },
-    {
-      "location": "devDocs/",
-      "comment": "Ignore my dev docs from Github",
-      "action": "exclude"
-    },
-    {
-      "location": "private.yml",
-      "comment": "Keep my private API Keys out of Github",
-      "action": "exclude"
-    },
-    {
-      "location": "#MyWeirdFileName.txt",
-      "comment": "Ignore my weird file name, that starts with a #, and needs to be escaped with a backslash",
-      "action": "exclude"
-    },
-    {
-      "location": "!important.json",
-      "comment": "Ignore my secret json. Starts with ! should be escaped with a backslash",
-      "action": "exclude"
-    }
-  ],
-  "dockerignore": [
-    {
-      "location": "*.go",
-      "comment": "Exclude all Golang Files",
-      "action": "exclude"
-    }
+
   ],
   "prettierignore": [
-    {
-      "location": "*.html",
-      "comment": "Not including my HTML in prettier for some reason",
-      "action": "exclude"
-    }
+
+  ],
+  "eslintignore": [
+
   ]
 }

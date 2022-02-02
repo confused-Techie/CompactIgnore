@@ -7,13 +7,13 @@ Within the `parse_table.json` file will be included as many profiles as supporte
 The Declarator will be the Declaration needed within the .compactignore file to indicate the type of profile to be used.
 e.g. gitignore can be the declarator for creating a .gitignore file, where in the .compactignore file will need:
 
-````(json)
+```(json)
 "gitignore": [
   "location": "",
   "comment": "",
   "action": ""
 ]
-````
+```
 
 ## `path`:
 
@@ -33,4 +33,4 @@ This will be the resulting files exact name, and will be used to save the file t
 
 ## Parsers: attribution:
 
-Optionally the parser may include an attribution function that will be called before any entries are processed, allowing attribution to be placed at the top of the file. 
+Optionally the parser may include an attribution function that will be called before any entries are processed, allowing attribution to be placed at the top of the file.
