@@ -4,6 +4,10 @@
     "node": true
   },
   "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "script"
+  },
   "rules": {
     "eqeqeq": "off",
     "no-use-before-define": "off",
