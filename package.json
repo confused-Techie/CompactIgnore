@@ -8,5 +8,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "confused-Techie",
-  "license": "TBD"
+  "license": "GPL-3.0",
+  "eslintConfig": {
+    "rules": {
+      "eqeqeq": "off",
+      "no-use-before-define": "off",
+      "quotes": ["error", "double"]
+    },
+    "reportUnusedDisableDirectives": true
+  }
 }
