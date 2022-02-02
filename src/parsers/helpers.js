@@ -1,5 +1,9 @@
 function isNotNull(toCheck) {
-  return typeof toCheck !== null;
+  if (typeof toCheck !== "undefined") {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function sanatize(string) {
