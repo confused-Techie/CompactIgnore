@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "profiles": [
+    {
+      "declarator": "gitignore",
+      "path": "../parsers/gitignore.js",
+      "parser": "injest",
+      "name": ".gitignore"
+    },
+    {
+      "declarator": "dockerignore",
+      "path": "../parsers/dockerignore.js",
+      "parser": "injest",
+      "name": ".dockerignore"
+    },
+    {
+      "declarator": "prettierignore",
+      "path": "../parsers/prettierignore.js",
+      "parser": "injest",
+      "name": ".prettierignore"
+    },
+    {
+      "declarator": "npmignore",
+      "path": "../parsers/npmignore.js",
+      "parser": "injest",
+      "name": ".npmignore"
+    }
+  ]
+}
