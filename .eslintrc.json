@@ -14,9 +14,12 @@
     "quotes": ["error", "double"],
     "arrow-parens": "off",
     "no-console": "off",
-    "arrow-spacing": "on",
-    "block-scoped-var": "on",
+    "arrow-spacing": "error",
+    "block-scoped-var": "error",
     "complexity": ["error", 15]
   },
-  "reportUnusedDisableDirectives": true
+  "reportUnusedDisableDirectives": true,
+  "globals": {
+    "Promise": "readonly"
+  }
 }
