@@ -1,17 +1,32 @@
 {
-  "name": "compactignore",
+  "name": "@confused-techie/compactignore",
   "version": "1.0.0",
   "description": "Method of managing multiple Ignore and Config Files Easily.",
   "main": "index.js",
-  "bin": "./bin/compactignore.js",
+  "bin": {
+    "compactignore": "bin/compactignore.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "prettier --check -u -w ."
   },
-  "author": "confused-Techie",
+  "author": "confused-techie",
   "license": "GPL-3.0",
   "devDependencies": {
     "eslint": "^8.8.0",
     "prettier": "^2.5.1"
-  }
+  },
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/confused-Techie/CompactIgnore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/confused-Techie/CompactIgnore/issues"
+  },
+  "homepage": "https://github.com/confused-Techie/CompactIgnore#readme"
 }
