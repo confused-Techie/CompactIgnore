@@ -1,9 +1,4 @@
-const {
-  isNotNull,
-  gitLikeAddComment,
-  gitLikeAddEntryEscape,
-  gitLikeInjest,
-} = require("./helpers.js");
+const { gitLikeInjest } = require("./helpers.js");
 
 function injest(data) {
   return gitLikeInjest(data, true);
