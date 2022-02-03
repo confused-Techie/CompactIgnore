@@ -56,6 +56,23 @@ function gitLikeEscape(string) {
   return escapedString;
 }
 
+function gitLikeInjest(data, toEscape) {
+  var tmpReturn = "";
+
+  if (isNotNull(data.comment)) {
+    tmpReturn += gitLikeAddComment(data.comment);
+  }
+
+  if (isNotNull(data.action) && isNotNull(data.location)) {
+    if (toEscape) {
+      tmpReturn += gitLikeAddEntryEscape(data.action, data.location);
+    } else {
+      tmpReturn += gitLikeAddEntryNoEscape(data.action, data.location);
+    }
+  }
+  return tmpReturn;
+}
+
 module.exports = {
   isNotNull,
   sanatize,
@@ -63,4 +80,5 @@ module.exports = {
   gitLikeAddEntryNoEscape,
   gitLikeEscape,
   gitLikeAddEntryEscape,
+  gitLikeInjest,
 };

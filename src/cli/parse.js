@@ -34,15 +34,27 @@ function parseConfig(config) {
             // now we want to loop through each entry of compactignore within the specific declaration profile
             // and depending on the values that are specified, we will call the corresponding functions declared in the parse table.
             // while ensuring the minimium amount of values are there.
-
-            profileObj.fileContents += tmpParser[profile.parser](entry);
+            console.log(`Parser: ${profile.parser}`);
+            if (typeof tmpParser[profile.parser] === "function") {
+              profileObj.fileContents += tmpParser[profile.parser](entry);
+            } else {
+              reject(`Parser doesn't seem to be a function: ${profile.parser}`);
+            }
+            //profileObj.fileContents += tmpParser[profile.parser](entry);
           });
         }
 
         // Then to ensure this is called as well with the global values
         if (isNotNullCheck(config.global)) {
           config.global.forEach((globalEntry) => {
-            profileObj.fileContents += tmpParser[profile.parser](globalEntry);
+            if (typeof tmpParser[profile.parser] === "function") {
+              profileObj.fileContents += tmpParser[profile.parser](globalEntry);
+            } else {
+              reject(
+                `Parser doesn't seem to be a function: ${tmpParser}.${profile.parser}`
+              );
+            }
+            //profileObj.fileContents += tmpParser[profile.parser](globalEntry);
           });
         }
 

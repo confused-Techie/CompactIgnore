@@ -2,19 +2,11 @@ const {
   isNotNull,
   gitLikeAddComment,
   gitLikeAddEntryEscape,
+  gitLikeInjest,
 } = require("./helpers.js");
 
 function injest(data) {
-  var tmpReturn = "";
-
-  if (isNotNull(data.comment)) {
-    tmpReturn += gitLikeAddComment(data.comment);
-  }
-
-  if (isNotNull(data.action) && isNotNull(data.location)) {
-    tmpReturn += gitLikeAddEntryEscape(data.action, data.location);
-  }
-  return tmpReturn;
+  return gitLikeInjest(data, true);
 }
 
 function attribution() {
