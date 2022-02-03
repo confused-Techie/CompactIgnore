@@ -11,6 +11,7 @@
   "author": "confused-Techie",
   "license": "GPL-3.0",
   "devDependencies": {
+    "eslint": "^8.8.0",
     "prettier": "^2.5.1"
   }
 }
