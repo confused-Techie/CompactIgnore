@@ -38,4 +38,5 @@ jobs:
       - uses: codacy/codacy-coverage-reporter-action@v1.3.0
         with:
           api-token: ${{ secrets.CODACY_API_TOKEN }}
+          coverage-reports: ./tests/coverage/clover.xml
     
