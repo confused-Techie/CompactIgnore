@@ -32,3 +32,15 @@ test("Passes exclude node_modules/  \n to get node_modules/", () => {
     "node_modules/\n"
   );
 });
+
+test("Passes include node_modules/ to get !node_modules/NEW_LINE", () => {
+  expect(helpers.gitLikeAddEntryNoEscape("include", "node_modules/")).toBe("!node_modules/\n");
+});
+
+test("Passes exclude #node_modules/ to get \\#node_modules", () => {
+  expect(helpers.gitLikeAddEntryEscape("exclude", "#node_modules")).toBe("\\#node_modules\n");
+});
+
+test("Passes exclude !node_modules/ to get \\!node_modules", () => {
+  expect(helpers.gitLikeAddEntryEscape("exclude", "!node_modules")).toBe("\\!node_modules\n");
+})
