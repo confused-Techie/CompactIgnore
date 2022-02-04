@@ -40,7 +40,9 @@ test("Passes include node_modules/ to get !node_modules/NEW_LINE", () => {
 });
 
 test("Passes BLANK node_modules/ to get # node_modules/ Has no valid ACTION!\n", () => {
-  expect(helpers.gitLikeAddEntryNoEscape("", "node_modules/")).toBe("# node_modules/ Has no valid ACTION!\n");
+  expect(helpers.gitLikeAddEntryNoEscape("", "node_modules/")).toBe(
+    "# node_modules/ Has no valid ACTION!\n"
+  );
 });
 
 test("Passes exclude #node_modules/ to get \\#node_modules", () => {
