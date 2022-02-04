@@ -1,5 +1,5 @@
-const {defaults} = require('jest-config');
+const { defaults } = require("jest-config");
 module.exports = {
   collectCoverage: true,
-  coverageDirectory: "./tests/coverage/"
-}
+  coverageDirectory: "./tests/coverage/",
+};

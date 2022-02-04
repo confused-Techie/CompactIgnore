@@ -28,7 +28,7 @@ function parseConfig(config) {
           profileObj.fileContents += tmpParser.attribution();
         }
 
-        if (isArrayEmpty(config[profile.declarator])) {
+        if (!isArrayEmpty(config[profile.declarator])) {
           // since if one wants to populate all files with only globals, this may be empty
           config[profile.declarator].forEach((entry, entryIndex) => {
             // now we want to loop through each entry of compactignore within the specific declaration profile
