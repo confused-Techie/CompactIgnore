@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1643948924279" clover="3.2.0">
-  <project timestamp="1643948924279" name="All files">
+<coverage generated="1643948971961" clover="3.2.0">
+  <project timestamp="1643948971961" name="All files">
     <metrics statements="34" coveredstatements="9" conditionals="18" coveredconditionals="1" methods="7" coveredmethods="3" elements="59" coveredelements="13" complexity="0" loc="34" ncloc="34" packages="1" files="1" classes="1"/>
-    <file name="helpers.js" path="D:\Personal Documents\GitHub Repositories\CompactIgnore\src\parsers\helpers.js">
+    <file name="helpers.js" path="/home/runner/work/CompactIgnore/CompactIgnore/src/parsers/helpers.js">
       <metrics statements="34" coveredstatements="9" conditionals="18" coveredconditionals="1" methods="7" coveredmethods="3"/>
       <line num="2" count="1" type="cond" truecount="1" falsecount="1"/>
       <line num="3" count="1" type="stmt"/>
