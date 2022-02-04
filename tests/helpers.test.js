@@ -4,8 +4,9 @@ test("Passes 'Thisisastring' to isNotNull to get 'true'", () => {
   expect(helpers.isNotNull("Thisisastring")).toBe(true);
 });
 
-test("Passes 'null' to isNotNull to get 'false'", () => {
-  expect(helpers.isNotNull(null)).toBe(false);
+test("Passes undeclared variable to isNotNull to get 'false'", () => {
+  var tmp;
+  expect(helpers.isNotNull(tmp)).toBe(false);
 });
 
 test("Passes 'undefined' to isNotNull to get 'false'", () => {
