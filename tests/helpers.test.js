@@ -21,9 +21,9 @@ test("Passes 'Comment' to gitLikeAddComment to get '# Comment'", () => {
 });
 
 test("Passes exclude 'node_modules/' to get node_modules/", () => {
-  expect(helpers.gitLikeAddEntryNoEscape("exclude", "node_modules/")).toBe("node_modules\n");
+  expect(helpers.gitLikeAddEntryNoEscape("exclude", "node_modules/")).toBe("node_modules/\n");
 });
 
 test("Passes exclude node_modules/  \n to get node_modules/", () => {
-  expect(helpers.gitLikeAddEntryNoEscape("exclude", "node_modules/   \n")).toBe("node_modules\n");
+  expect(helpers.gitLikeAddEntryNoEscape("exclude", "node_modules/   \n")).toBe("node_modules/\n");
 })

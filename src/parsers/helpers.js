@@ -1,5 +1,5 @@
 function isNotNull(toCheck) {
-  if (typeof toCheck !== "undefined") {
+  if (typeof toCheck !== "undefined" && typeof toCheck !== "null") {
     return true;
   } else {
     return false;
