@@ -1,5 +1,5 @@
 TN:
-SF:src\parsers\helpers.js
+SF:src/parsers/helpers.js
 FN:1,isNotNull
 FN:9,sanatize
 FN:17,gitLikeAddComment
@@ -8,16 +8,16 @@ FN:35,gitLikeAddEntryEscape
 FN:42,gitLikeEscape
 FN:59,gitLikeInjest
 FNF:7
-FNH:2
-FNDA:0,isNotNull
+FNH:3
+FNDA:1,isNotNull
 FNDA:1,sanatize
 FNDA:1,gitLikeAddComment
 FNDA:0,gitLikeAddEntryNoEscape
 FNDA:0,gitLikeAddEntryEscape
 FNDA:0,gitLikeEscape
 FNDA:0,gitLikeInjest
-DA:2,0
-DA:3,0
+DA:2,1
+DA:3,1
 DA:5,0
 DA:10,1
 DA:11,1
@@ -51,8 +51,8 @@ DA:70,0
 DA:73,0
 DA:76,1
 LF:34
-LH:7
-BRDA:2,0,0,0
+LH:9
+BRDA:2,0,0,1
 BRDA:2,0,1,0
 BRDA:27,1,0,0
 BRDA:27,1,1,0
@@ -71,5 +71,5 @@ BRDA:66,7,1,0
 BRDA:67,8,0,0
 BRDA:67,8,1,0
 BRF:18
-BRH:0
+BRH:1
 end_of_record
