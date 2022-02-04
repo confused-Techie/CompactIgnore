@@ -85,9 +85,9 @@ node_modules/
 
 ## Documentation
 
-  - [Installation](docs/install.md)
-  - [Create .compactignore](docs/config.md)
-  - [Profiles Overview](docs/profiles.md)
+- [Installation](docs/install.md)
+- [Create .compactignore](docs/config.md)
+- [Profiles Overview](docs/profiles.md)
 
 ## Contribute
 
