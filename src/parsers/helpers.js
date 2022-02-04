@@ -28,6 +28,9 @@ function gitLikeAddEntryNoEscape(action, location) {
     tmpReturn = `${fileLoc}\n`;
   } else if (action == "include") {
     tmpReturn = `!${fileLoc}\n`;
+  } else {
+    tmpReturn = `# ${fileLoc} Has no valid ACTION!\n`;
+    console.log(`${fileLoc} Has no valid ACTION!`);
   }
   return tmpReturn;
 }
