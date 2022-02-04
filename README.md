@@ -1,6 +1,6 @@
 # CompactIgnore
 
-> Single file configuration for your Code.
+> Single file configuration for your Code exclusions.
 
 <i>.gitignore - .dockerignore - .prettierignore - .npmignore - .eslintignore</i>
 

@@ -1,19 +1,21 @@
 {
   "name": "@confused-techie/compactignore",
   "version": "1.0.0",
-  "description": "Method of managing multiple Ignore and Config Files Easily.",
+  "description": "Single file configuration for your Code exclusions",
   "main": "index.js",
   "bin": {
     "compactignore": "bin/compactignore.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --coverage",
     "lint": "prettier --check -u -w ."
   },
   "author": "confused-techie",
   "license": "GPL-3.0",
   "devDependencies": {
+    "codecov": "^3.8.3",
     "eslint": "^8.8.0",
+    "jest": "^27.4.7",
     "prettier": "^2.5.1"
   },
   "directories": {
