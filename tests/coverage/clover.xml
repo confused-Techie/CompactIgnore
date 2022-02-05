@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1643957768643" clover="3.2.0">
-  <project timestamp="1643957768644" name="All files">
+<coverage generated="1644020222376" clover="3.2.0">
+  <project timestamp="1644020222376" name="All files">
     <metrics statements="36" coveredstatements="36" conditionals="18" coveredconditionals="16" methods="7" coveredmethods="7" elements="61" coveredelements="59" complexity="0" loc="36" ncloc="36" packages="1" files="1" classes="1"/>
     <file name="helpers.js" path="/home/runner/work/CompactIgnore/CompactIgnore/src/parsers/helpers.js">
       <metrics statements="36" coveredstatements="36" conditionals="18" coveredconditionals="16" methods="7" coveredmethods="7"/>
