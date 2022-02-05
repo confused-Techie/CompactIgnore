@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1644024011230" clover="3.2.0">
-  <project timestamp="1644024011231" name="All files">
+<coverage generated="1644024088726" clover="3.2.0">
+  <project timestamp="1644024088726" name="All files">
     <metrics statements="39" coveredstatements="39" conditionals="18" coveredconditionals="16" methods="8" coveredmethods="8" elements="65" coveredelements="63" complexity="0" loc="39" ncloc="39" packages="2" files="2" classes="2"/>
     <package name="cli">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="options.js" path="D:\Personal Documents\GitHub Repositories\CompactIgnore\src\cli\options.js">
+      <file name="options.js" path="/home/runner/work/CompactIgnore/CompactIgnore/src/cli/options.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -13,7 +13,7 @@
     </package>
     <package name="parsers">
       <metrics statements="36" coveredstatements="36" conditionals="18" coveredconditionals="16" methods="7" coveredmethods="7"/>
-      <file name="helpers.js" path="D:\Personal Documents\GitHub Repositories\CompactIgnore\src\parsers\helpers.js">
+      <file name="helpers.js" path="/home/runner/work/CompactIgnore/CompactIgnore/src/parsers/helpers.js">
         <metrics statements="36" coveredstatements="36" conditionals="18" coveredconditionals="16" methods="7" coveredmethods="7"/>
         <line num="2" count="9" type="cond" truecount="2" falsecount="0"/>
         <line num="3" count="7" type="stmt"/>
