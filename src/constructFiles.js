@@ -1,6 +1,9 @@
 
-const gitignore = require("./services/gitignore.js");
 const dockerignore = require("./services/dockerignore.js");
+const eslintignore = require("./services/eslintignore.js");
+const gitignore = require("./services/gitignore.js");
+const npmignore = require("./services/npmignore.js");
+const prettierignore = require("./services/prettierignore.js");
 
 let PROFILES = [];
 
@@ -37,12 +40,27 @@ module.exports = async function constructFiles(obj) {
 
 function generateProfiles() {
   PROFILES.push({
+    profile: dockerignore.PROFILE,
+    build: dockerignore.build
+  });
+
+  PROFILES.push({
+    profile: eslintignore.PROFILE,
+    build: eslintignore.build
+  });
+
+  PROFILES.push({
     profile: gitignore.PROFILE,
     build: gitignore.build
   });
 
   PROFILES.push({
-    profile: dockerignore.PROFILE,
-    build: dockerignore.build
+    profile: npmignore.PROFILE,
+    build: npmignore.build
+  });
+
+  PROFILES.push({
+    profile: prettierignore.PROFILE,
+    build: prettierignore.build
   });
 }

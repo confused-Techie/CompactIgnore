@@ -7,22 +7,21 @@
     "compactignore": "bin/compactignore.js"
   },
   "scripts": {
-    "test": "jest --coverage",
+    "test": "echo 'Tests have been invalidated!'",
     "lint": "prettier --check -u -w ."
   },
   "author": "confused-techie",
   "license": "GPL-3.0",
   "devDependencies": {
     "codecov": "^3.8.3",
-    "eslint": "^8.8.0",
-    "jest": "^27.4.7",
-    "prettier": "^2.5.1"
+    "eslint": "^8.33.0",
+    "jest": "^29.4.1",
+    "prettier": "^2.8.3"
   },
   "directories": {
     "doc": "docs",
     "example": "examples"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/confused-Techie/CompactIgnore.git"

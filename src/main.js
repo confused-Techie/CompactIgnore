@@ -1,9 +1,12 @@
+const fs = require("fs");
+const { performance } = require("node:perf_hooks");
 const getConfig = require("./configuration.js");
 const parse = require("./parse.js");
 const constructFiles = require("./constructFiles.js");
-const fs = require("fs");
 
 async function run(rawArguments) {
+  let start = performance.now();
+
   // Until we support options, we will leave rawArguments alone
 
   let config = await getConfig();
@@ -12,9 +15,19 @@ async function run(rawArguments) {
 
   let writable = await parse(config);
 
+  let writeStart = performance.now();
+
   let files = await constructFiles(writable);
 
+  let writeEnd = performance.now() - start;
+
+  console.log(`Generated .ignores in ${writeEnd}ms`);
+
   let res = await writeFiles(files);
+
+  let end = performance.now() - start;
+
+  console.log(`Ran in ${end}ms`);
 
   if (res === 0) {
     console.log("Done!");
