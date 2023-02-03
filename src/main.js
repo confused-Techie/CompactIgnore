@@ -39,15 +39,13 @@ async function run(rawArguments) {
 async function writeFiles(files) {
   let errs = [];
   for (file of files) {
-
     // Later on we can check if we should add an attribution
     try {
       let text = file.attribution;
       text += file.content;
 
       fs.writeFileSync(file.name, text, { encoding: "utf8" });
-
-    } catch(err) {
+    } catch (err) {
       errs.push(err);
     }
   }

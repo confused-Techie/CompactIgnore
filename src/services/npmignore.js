@@ -15,7 +15,7 @@ async function build(obj) {
   let file = {
     name: ".npmignore",
     content: tempContent,
-    attribution: ATTRIBUTION
+    attribution: ATTRIBUTION,
   };
 
   return file;

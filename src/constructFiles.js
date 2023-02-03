@@ -1,4 +1,3 @@
-
 const dockerignore = require("./services/dockerignore.js");
 const eslintignore = require("./services/eslintignore.js");
 const gitignore = require("./services/gitignore.js");
@@ -35,32 +34,31 @@ module.exports = async function constructFiles(obj) {
   }
 
   return files;
-
-}
+};
 
 function generateProfiles() {
   PROFILES.push({
     profile: dockerignore.PROFILE,
-    build: dockerignore.build
+    build: dockerignore.build,
   });
 
   PROFILES.push({
     profile: eslintignore.PROFILE,
-    build: eslintignore.build
+    build: eslintignore.build,
   });
 
   PROFILES.push({
     profile: gitignore.PROFILE,
-    build: gitignore.build
+    build: gitignore.build,
   });
 
   PROFILES.push({
     profile: npmignore.PROFILE,
-    build: npmignore.build
+    build: npmignore.build,
   });
 
   PROFILES.push({
     profile: prettierignore.PROFILE,
-    build: prettierignore.build
+    build: prettierignore.build,
   });
 }

@@ -1,7 +1,6 @@
 const fs = require("fs");
 
 module.exports = async function getConfig() {
-
   const fileConfig = await findFileConfig();
 
   if (!fileConfig) {
@@ -20,13 +19,12 @@ module.exports = async function getConfig() {
 
   // The .compactignore exists, lets return
   return fileConfig;
-}
+};
 
 async function findFileConfig() {
   // This will attempt to locate a `.compactignore` configuration file
 
   try {
-
     let fileExists = await findFile(".compactignore");
 
     console.log(`.compactignore Found: ${fileExists}`);
@@ -34,8 +32,7 @@ async function findFileConfig() {
     let file = fs.readFileSync(fileExists, { encoding: "utf8" });
 
     return file;
-
-  } catch(err) {
+  } catch (err) {
     console.log(err);
     return false;
   }
@@ -66,19 +63,16 @@ async function findFile(searchFile) {
 
 async function readPackage() {
   try {
-
     let pack = fs.readFileSync("package.json", { encoding: "utf8" });
 
     pack = JSON.parse(pack);
 
     if (pack.compactignore) {
-
       return pack.compactignore;
-
     } else {
       return false;
     }
-  } catch(err) {
+  } catch (err) {
     console.log(err);
     return false;
   }

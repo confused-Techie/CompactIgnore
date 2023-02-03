@@ -27,7 +27,7 @@ class Parser {
       if (this.curProfile) {
         this.out[this.curProfile].children.push({
           type: "comment",
-          value: comment.trim()
+          value: comment.trim(),
         });
       } else {
         // the comment occured outside of proper profile, add under custom profile
@@ -43,7 +43,7 @@ class Parser {
       if (this.curProfile) {
         this.out[this.curProfile].children.push({
           type: "inclusion",
-          value: line
+          value: line,
         });
       } // else the inclusion is dropped
       return this.parse();
@@ -72,7 +72,7 @@ class Parser {
       if (this.curProfile) {
         this.out[this.curProfile].children.push({
           type: "exclusion",
-          value: line
+          value: line,
         });
       } // else the exclusion is dropped
       return this.parse();
@@ -111,7 +111,6 @@ class Parser {
       return this.greedyNext(line);
     }
   }
-
 }
 
 module.exports = Parser;
