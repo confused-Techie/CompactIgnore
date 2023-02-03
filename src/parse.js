@@ -24,4 +24,4 @@ module.exports = async function parse(config) {
 
     return parser.out;
   }
-}
+};

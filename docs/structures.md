@@ -16,9 +16,7 @@ The `parser.js` returns the following parsed data:
 
 ```json
 {
-  "orphanComments": [
-    "This is an orphaned comment"
-  ],
+  "orphanComments": ["This is an orphaned comment"],
   "GLOBAL": {
     "children": [
       {
@@ -45,7 +43,6 @@ The `parser.js` returns the following parsed data:
   }
 }
 ```
-
 
 ---
 
