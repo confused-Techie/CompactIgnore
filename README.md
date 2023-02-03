@@ -8,6 +8,12 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![codecov](https://codecov.io/gh/confused-Techie/CompactIgnore/branch/main/graph/badge.svg?token=PVEXNNPOGJ)](https://codecov.io/gh/confused-Techie/CompactIgnore)
 
+## Warning
+
+This repo is undergoing a complete rewrite, all docs are currently out of date. So sorry about that
+
+The biggest take away is a new parser for the `.compactignore` and now using a `.gitignore` like syntax for the `.compactignore` rather than JSON.
+
 ## Intro
 
 CompactIgnore is a single file configuration tool to help reduce the overhead and maintain consistency across Build Tool configuration files.
