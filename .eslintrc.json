@@ -22,6 +22,9 @@
   "globals": {
     "Promise": "readonly",
     "test": "readonly",
-    "expect": "readonly"
+    "expect": "readonly",
+    "beforeAll": "readonly",
+    "describe": "readonly",
+    "afterAll": "readonly"
   }
 }
