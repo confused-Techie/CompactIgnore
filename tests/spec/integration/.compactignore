@@ -1,0 +1,12 @@
+# An Orphan Comment to appear at the top of each file
+> GLOBAL
+/node/modules
+!/keep/this
+> dockerignore
+/only/for/docker
+> npmignore
+/only/for/npm
+> eslintignore
+> prettierignore
+/only/for/prettier
+> gitignore
