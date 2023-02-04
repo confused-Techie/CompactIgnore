@@ -16,10 +16,6 @@
     "jest": "^29.4.1",
     "prettier": "^2.8.3"
   },
-  "directories": {
-    "doc": "docs",
-    "example": "examples"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/confused-Techie/CompactIgnore.git"
