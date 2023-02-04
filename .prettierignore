@@ -3,3 +3,5 @@
 # Lets quickly and easily generate our Ignore Files
 node_modules/
 examples/
+# Ignore .github folder to ensure it doesn't attempt to lint workflows
+.github
