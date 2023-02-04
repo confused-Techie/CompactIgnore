@@ -19,7 +19,7 @@ async function run(rawArguments) {
 
   let files = await constructFiles(writable);
 
-  let writeEnd = performance.now() - start;
+  let writeEnd = performance.now() - writeStart;
 
   console.log(`Generated .ignores in ${writeEnd}ms`);
 
@@ -38,7 +38,7 @@ async function run(rawArguments) {
 
 async function writeFiles(files) {
   let errs = [];
-  for (file of files) {
+  for (const file of files) {
     // Later on we can check if we should add an attribution
     try {
       let text = file.attribution;
