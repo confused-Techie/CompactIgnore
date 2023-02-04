@@ -9,13 +9,13 @@ on:
 
 jobs:
   tests:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: write
 
     strategy:
       matrix:
-        node-version: [16.x, 17.x, 19.x]
+        node-version: [16.x, 17.x, 18.x, 19.x]
 
     steps:
     - name: Checkout the latest code
@@ -36,4 +36,4 @@ jobs:
       if: always() # Needed to ensure coverage is commited even on test failure
       uses: codecov/codecov-action@v3
       with:
-        files: ./tests/coverage/clover.xml 
+        files: ./tests/coverage/clover.xml
