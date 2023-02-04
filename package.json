@@ -1,6 +1,6 @@
 {
   "name": "@confused-techie/compactignore",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Single file configuration for your Code Exclusions.",
   "main": "index.js",
   "bin": {
