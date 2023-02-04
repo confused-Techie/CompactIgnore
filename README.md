@@ -19,11 +19,13 @@ By creating a `.compactignore` file, it will be able to generate any supported i
 To start using CompactIgnore install the package, either Globally or as a Dev Dependency:
 
 <b>Globally:</b>
+
 ```shell
 npm install @confused-techie/compactignore -g
 ```
 
 <b>Dev-Dependency:</b>
+
 ```shell
 npm install @confused-techie/compactignore -D
 ```
@@ -55,12 +57,13 @@ When creating your `.compactignore` file it's good to know that generally all ru
 CompactIgnore uses Profiles to determine what kind of ignore file to generate as well as using Profiles to separate what entries to include in each file.
 
 The key values to remember:
-  * `>` is a profile declarator line. This character should be followed by the profile you plan to use for this file.
-  * `!` means to include this file in your ignore file, similar to how this will include the file when used in a gitignore
-  * `#` means this line is a comment. It will be included in the final ignore files
-  * Having no special character in front of a line will then go ahead and exclude that line from the ignore file.
-  * To escape any characters use `\`
-  * Each entry must be on it's one line
+
+- `>` is a profile declarator line. This character should be followed by the profile you plan to use for this file.
+- `!` means to include this file in your ignore file, similar to how this will include the file when used in a gitignore
+- `#` means this line is a comment. It will be included in the final ignore files
+- Having no special character in front of a line will then go ahead and exclude that line from the ignore file.
+- To escape any characters use `\`
+- Each entry must be on it's one line
 
 # Examples
 
@@ -102,12 +105,13 @@ If you'd like, [here's](https://github.com/confused-Techie/CompactIgnore/tree/ma
 # Profiles
 
 The following profiles are supported:
-  * `GLOBAL`|`global`: This profile will apply all entries globally to each other ignore file that is created.
-  * `dockerignore`: This profile will generate a `.dockerignore` file.
-  * `eslintignore`: This profile will generate a `.eslintignore` file.
-  * `gitignore`: This profile will generate a `.gitignore` file.
-  * `npmignore`: This profile will generate a `.npmignore` file.
-  * `prettierignore`: This profile will generate a `.prettierignore` file.
+
+- `GLOBAL`|`global`: This profile will apply all entries globally to each other ignore file that is created.
+- `dockerignore`: This profile will generate a `.dockerignore` file.
+- `eslintignore`: This profile will generate a `.eslintignore` file.
+- `gitignore`: This profile will generate a `.gitignore` file.
+- `npmignore`: This profile will generate a `.npmignore` file.
+- `prettierignore`: This profile will generate a `.prettierignore` file.
 
 # Why use CompactIgnore
 
