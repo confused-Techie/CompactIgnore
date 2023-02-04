@@ -59,7 +59,7 @@ The key values to remember:
   * `!` means to include this file in your ignore file, similar to how this will include the file when used in a gitignore
   * `#` means this line is a comment. It will be included in the final ignore files
   * Having no special character in front of a line will then go ahead and exclude that line from the ignore file.
-  * To escape any characters use `\\`
+  * To escape any characters use `\`
   * Each entry must be on it's one line
 
 # Examples
@@ -109,7 +109,7 @@ The following profiles are supported:
   * `npmignore`: This profile will generate a `.npmignore` file.
   * `prettierignore`: This profile will generate a `.prettierignore` file.
 
-# Why use CompactIgnore 
+# Why use CompactIgnore
 
 CompactIgnore is made for those developers who end up having to maintain several ignore files in a single codebase.
 
