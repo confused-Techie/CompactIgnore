@@ -1,7 +1,9 @@
-# This is an orphaned comment
->GLOBAL
-# This is a global comment
+# Lets quickly and easily generate our Ignore Files
+> GLOBAL
 node_modules/
->gitignore
->dockerignore
-/remove/docker/file.txt
+> gitignore
+> eslintignore
+tests/coverage
+> prettierignore
+examples/
+> npmignore
