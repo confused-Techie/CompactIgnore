@@ -2,3 +2,16 @@
 
 # Lets quickly and easily generate our Ignore Files
 node_modules/
+.github/
+docs/
+examples/
+tests/
+.compactignore
+.eslintignore
+.eslintrc.json
+.gitignore
+.prettierignore
+CHANGE_LOG.md
+CONTRIBUTING.md
+jest.config.js
+README.md

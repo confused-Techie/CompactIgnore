@@ -9,3 +9,16 @@ examples/
 # Ignore .github folder to ensure it doesn't attempt to lint workflows
 .github
 > npmignore
+.github/
+docs/
+examples/
+tests/
+.compactignore
+.eslintignore
+.eslintrc.json
+.gitignore
+.prettierignore
+CHANGE_LOG.md
+CONTRIBUTING.md
+jest.config.js
+README.md
