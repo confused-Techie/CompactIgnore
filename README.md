@@ -2,7 +2,7 @@
 
 > Single file configuration for your Code Exclusions.
 
-<i>.gitignore - .dockerignore - .prettierignore - .npmignore - .eslintignore</i>
+<i>.gitignore - .dockerignore - .prettierignore - .npmignore - .eslintignore - .gcloudignore</i>
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/38acc200e45241d2b6437bb545bd32f4)](https://www.codacy.com/gh/confused-Techie/CompactIgnore/dashboard?utm_source=github.com&utm_medium=referral&utm_content=confused-Techie/CompactIgnore&utm_campaign=Badge_Grade)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -112,6 +112,7 @@ The following profiles are supported:
 - `gitignore`: This profile will generate a `.gitignore` file.
 - `npmignore`: This profile will generate a `.npmignore` file.
 - `prettierignore`: This profile will generate a `.prettierignore` file.
+- `gcloudignore`: This profile will generate a `.gcloudignore` file.
 
 # Why use CompactIgnore
 

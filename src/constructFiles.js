@@ -3,6 +3,7 @@ const eslintignore = require("./services/eslintignore.js");
 const gitignore = require("./services/gitignore.js");
 const npmignore = require("./services/npmignore.js");
 const prettierignore = require("./services/prettierignore.js");
+const gcloudignore = require("./services/gcloudignore.js");
 
 let PROFILES = [];
 
@@ -60,5 +61,10 @@ function generateProfiles() {
   PROFILES.push({
     profile: prettierignore.PROFILE,
     build: prettierignore.build,
+  });
+
+  PROFILES.push({
+    profile: gcloudignore.PROFILE,
+    build: gcloudignore.build,
   });
 }

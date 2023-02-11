@@ -10,3 +10,6 @@
 > prettierignore
 /only/for/prettier
 > gitignore
+> gcloudignore
+/only/for/gcloud
+!/ignore/only/for/gcloud
